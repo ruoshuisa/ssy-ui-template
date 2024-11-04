@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+// import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
@@ -8,12 +8,17 @@ import HelloWorld from './components/HelloWorld.vue'
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125"/>
     <img src="./stores/image.png" style="height: 150px;width: 150px;">
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
+      <HelloWorld msg="Vite + Vue3 + SSYUI" />
+      <div style="margin-bottom: 20px;"> 
+        <!-- <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
-      </nav>
+      </nav> -->
+        <SButton>SButton</SButton>
+        <SLink color="green" size="large">测试Link组件</SLink>
+      </div>
+
+      
     </div>
   </header>
 
